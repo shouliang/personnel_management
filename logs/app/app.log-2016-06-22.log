@@ -1,0 +1,33 @@
+[2016-06-22 15:53:09.938] [INFO] cluster - worker 1 fork   pid:8016
+[2016-06-22 15:53:11.938] [FATAL] cluster - { error: { [Error: bind EADDRINUSE] code: 'EADDRINUSE', errno: 'EADDRINUSE', syscall: 'bind' },
+  stack: 'Error: bind EADDRINUSE\n    at exports._errnoException (util.js:746:11)\n    at cb (net.js:1207:33)\n    at shared (cluster.js:589:5)\n    at Worker.<anonymous> (cluster.js:564:9)\n    at process.<anonymous> (cluster.js:695:8)\n    at process.emit (events.js:129:20)\n    at handleMessage (child_process.js:327:10)\n    at child_process.js:411:7\n    at process.handleConversion.net.Native.got (child_process.js:97:7)\n    at process.<anonymous> (child_process.js:410:13)\n    at process.emit (events.js:129:20)\n    at handleMessage (child_process.js:327:10)\n    at Pipe.channel.onread (child_process.js:353:11)',
+  message: '未被catch的异常！！',
+  message2: NaN }
+[2016-06-22 15:54:33.079] [INFO] cluster - worker 1 fork   pid:13676
+[2016-06-22 15:54:34.910] [FATAL] cluster - { error: { [Error: bind EADDRINUSE] code: 'EADDRINUSE', errno: 'EADDRINUSE', syscall: 'bind' },
+  stack: 'Error: bind EADDRINUSE\n    at exports._errnoException (util.js:746:11)\n    at cb (net.js:1207:33)\n    at shared (cluster.js:589:5)\n    at Worker.<anonymous> (cluster.js:564:9)\n    at process.<anonymous> (cluster.js:695:8)\n    at process.emit (events.js:129:20)\n    at handleMessage (child_process.js:327:10)\n    at child_process.js:411:7\n    at process.handleConversion.net.Native.got (child_process.js:97:7)\n    at process.<anonymous> (child_process.js:410:13)\n    at process.emit (events.js:129:20)\n    at handleMessage (child_process.js:327:10)\n    at Pipe.channel.onread (child_process.js:353:11)',
+  message: '未被catch的异常！！',
+  message2: NaN }
+[2016-06-22 15:56:04.427] [INFO] cluster - worker 1 fork   pid:15844
+[2016-06-22 15:56:06.238] [FATAL] cluster - { error: { [Error: bind EADDRINUSE] code: 'EADDRINUSE', errno: 'EADDRINUSE', syscall: 'bind' },
+  stack: 'Error: bind EADDRINUSE\n    at exports._errnoException (util.js:746:11)\n    at cb (net.js:1207:33)\n    at shared (cluster.js:589:5)\n    at Worker.<anonymous> (cluster.js:564:9)\n    at process.<anonymous> (cluster.js:695:8)\n    at process.emit (events.js:129:20)\n    at handleMessage (child_process.js:327:10)\n    at child_process.js:411:7\n    at process.handleConversion.net.Native.got (child_process.js:97:7)\n    at process.<anonymous> (child_process.js:410:13)\n    at process.emit (events.js:129:20)\n    at handleMessage (child_process.js:327:10)\n    at Pipe.channel.onread (child_process.js:353:11)',
+  message: '未被catch的异常！！',
+  message2: NaN }
+[2016-06-22 15:57:08.730] [INFO] cluster - worker 1 fork   pid:18296
+[2016-06-22 15:57:48.911] [INFO] access - url: /user/check_out    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 15:57:48.934] [INFO] access - url: /user/user/login    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 15:57:48.943] [INFO] access - url: /user/login    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 15:57:49.522] [INFO] access - url: /user/login    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 15:57:50.889] [INFO] access - url: /user/login    method: POST   params: {}   body: {"userName":"12345678910","password":"123456"}    query: {}
+[2016-06-22 15:57:51.336] [INFO] access - url: /index    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 15:57:51.346] [INFO] access - url: /user/login    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 15:57:51.693] [INFO] access - url: /user/login    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 15:57:54.901] [INFO] access - url: /user/login    method: POST   params: {}   body: {"userName":"12345678910","password":"123456"}    query: {}
+[2016-06-22 15:57:54.952] [INFO] access - url: /index    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 15:57:54.959] [INFO] access - url: /user/login    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 15:57:55.172] [INFO] access - url: /user/login    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 16:10:24.087] [INFO] cluster - worker 1 fork   pid:8484
+[2016-06-22 16:10:32.283] [INFO] access - url: /user/login    method: POST   params: {}   body: {"userName":"12345678910","password":"123456"}    query: {}
+[2016-06-22 16:10:32.341] [INFO] access - url: /index    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 16:10:32.355] [INFO] access - url: /user/login    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 16:10:32.755] [INFO] access - url: /user/login    method: GET   params: {}   body: {}    query: {}

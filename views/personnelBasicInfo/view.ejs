@@ -1,0 +1,168 @@
+<%- include ../base/head.ejs %>
+<%- include ../base/css.ejs %>
+<%- include ../base/container.ejs %>
+
+<div class="row" style="margin-bottom: 2em;margin-left: 10px">
+    <div>
+        <table class="table table-striped table-bordered table-hover dataTable no-footer" id="view-table">
+        </table>
+    </div>
+</div>
+
+<!--新增模态框-->
+<div class="modal fade" id="modal_add" tabindex="-1" role="dialog"
+     aria-labelledby="modalLabel" aria-hidden="true" style="margin-top: 88px">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                            class="sr-only">Close</span></button>
+                <h4 class="modal-title">
+                    基础信息
+                </h4>
+            </div>
+            <form class="form-horizontal" id="base-add-form" role="form">
+
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">组织名称:</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="agencyName" name="agencyName" placeholder="请输入组织名称">
+                            <input id="AgencyId" name="AgencyId" type="hidden" />
+                            <input id="agencyCode" name="agencyCode" type="hidden"/>
+                        </div>
+                        <label  class="col-sm-1 coupon-add-notes">*</label>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">在职人数:</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inServiceNum" name="inServiceNum" placeholder="请输入在职人数">
+                        </div>
+                        <label  class="col-sm-1 coupon-add-notes">*</label>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">编制人数:</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="aurhorizedNum" name="aurhorizedNum" placeholder="请输入编制人数">
+                        </div>
+                        <label  class="col-sm-1 coupon-add-notes">*</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">仓库面积:</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="warehouseArea" name="warehouseArea"
+                                   placeholder="请输入仓库面积">
+                        </div>
+                        <label class="col-sm-1 coupon-add-notes">*</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="remark" class="col-sm-2 control-label">备注:</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="remark" name="remark" placeholder="请输入备注"/>
+                        </div>
+                        <label  class="col-sm-1 coupon-add-notes"></label>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default"
+                            data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" class="btn btn-primary" id="submitAdd">
+                        提交
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--修改模态框-->
+<div class="modal fade" id="modal_update" tabindex="-1" role="dialog"
+     aria-labelledby="modalLabel" aria-hidden="true" style="margin-top: 88px">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                            class="sr-only">Close</span></button>
+                <h4 class="modal-title">
+                    基础信息
+                </h4>
+            </div>
+            <form class="form-horizontal" id="base-update-form" role="form">
+
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">组织名称:</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="updateAgencyName" name="agencyName" readonly placeholder="请输入组织名称">
+                            <input id="updateAgencyId" name="AgencyId" type="hidden" value="3"/>
+                            <input id="updateAgencyCode" name="agencyCode" type="hidden" value="003"/>
+                            <input id="id" name="id" type="hidden"/>
+                        </div>
+                        <label  class="col-sm-1 coupon-add-notes">*</label>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">在职人数:</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="updateInServiceNum" name="inServiceNum" placeholder="请输入在职人数">
+                        </div>
+                        <label  class="col-sm-1 coupon-add-notes">*</label>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">编制人数:</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="updateAurhorizedNum" name="aurhorizedNum" placeholder="请输入编制人数">
+                        </div>
+                        <label  class="col-sm-1 coupon-add-notes">*</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">仓库面积:</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="updateWarehouseArea" name="warehouseArea"
+                                   placeholder="请输入仓库面积">
+                        </div>
+                        <label class="col-sm-1 coupon-add-notes">*</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">备注:</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="updateRemark" name="remark" placeholder="请输入备注"/>
+                        </div>
+                        <label  class="col-sm-1 coupon-add-notes"></label>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default"
+                            data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" class="btn btn-primary" id="submitUpdate">
+                        提交
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include ../base/javascript.ejs %>
+<script type="text/javascript" charset="utf-8" src="/javascripts/utils/datatables.js"></script>
+<script type="text/javascript" charset="utf-8" src="/javascripts/libs/moment.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/javascripts/libs/jquery/jquery.autocomplete.min.js"></script>
+
+<!-- 列表数据源 -->
+<script type="text/javascript" charset="utf-8" src="/javascripts/operations/personnelBasicInfo/list.js"></script>
+<%- include ../base/footer.ejs %>

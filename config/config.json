@@ -1,0 +1,106 @@
+{
+  "development": {
+    "loginServiceUrl":{
+      "host":"http://192.168.1.101",
+      "port":42000,
+      "path":"/user/loginSystem"
+    },
+    "dataBase": {
+      "ctcDb": {
+        "database": "ctcdb_test",
+        "host": "192.168.1.101",
+        "username": "root",
+        "password": "123456",
+        "dialect": "mysql"
+      },
+      "statisticsDb": {
+        "database": "statistics_db_dev",
+        "host": "192.168.1.101",
+        "username": "root",
+        "password": "123456",
+        "dialect": "mysql"
+      }
+    }
+  },
+  "test": {
+    "loginServiceUrl":{
+      "host":"http://192.168.1.101",
+      "port":42000,
+      "path":"/user/loginSystem"
+    },
+    "dataBase": {
+      "loginServiceUrl":{
+        "host":"192.168.1.101",
+        "port":42000,
+        "path":"/user/loginSystem"
+      },
+      "ctcDb": {
+        "database": "ctcdb_test",
+        "host": "192.168.1.101",
+        "username": "root",
+        "password": "123456",
+        "dialect": "mysql"
+      },
+      "statisticsDb": {
+        "database": "statistics_db_dev",
+        "host": "192.168.1.101",
+        "username": "root",
+        "password": "123456",
+        "dialect": "mysql"
+      }
+    }
+  },
+  "experience": {
+    "loginServiceUrl":{
+      "host":"http://211.152.32.59",
+      "port":42000,
+      "path":"/user/loginSystem"
+    },
+    "dataBase": {
+      "ctcDb": {
+        "database": "ctcdb_beta",
+        "host": "192.168.0.103",
+        "username": "root",
+        "password": "ctc@win@sql",
+        "dialect": "mysql"
+      },
+      "statisticsDb": {
+        "database": "statistics_db_test",
+        "host": "localhost",
+        "username": "root",
+        "password": "ctc@win@sql",
+        "dialect": "mysql"
+      }
+    }
+  },
+  "production": {
+    "loginServiceUrl":{
+      "host":"http://211.152.37.98",
+      "port":42000,
+      "path":"/user/loginSystem"
+    },
+    "dataBase": {
+      "ctcDb": {
+        "database": "ctcdb_prod",
+        "host": "192.168.0.101",
+        "username": "ctc",
+        "password": "ctc@win@sql",
+        "dialect": "mysql",
+        "logging": false
+      },
+      "statisticsDb": {
+        "database": "statistics_db",
+        "host": "192.168.0.102",
+        "username": "root",
+        "password": "tongjctc@win@db",
+        "dialect": "mysql",
+        "logging": false
+      }
+    }
+  },
+  "compressImage": {
+    "command": "java",
+    "path": "../utils/plugins",
+    "file": "PicGenerate"
+  }
+}

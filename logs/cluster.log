@@ -1,0 +1,131 @@
+[2016-06-22 15:53:09.938] [INFO] cluster - worker 1 fork   pid:8016
+[2016-06-22 15:53:11.938] [FATAL] cluster - { error: { [Error: bind EADDRINUSE] code: 'EADDRINUSE', errno: 'EADDRINUSE', syscall: 'bind' },
+  stack: 'Error: bind EADDRINUSE\n    at exports._errnoException (util.js:746:11)\n    at cb (net.js:1207:33)\n    at shared (cluster.js:589:5)\n    at Worker.<anonymous> (cluster.js:564:9)\n    at process.<anonymous> (cluster.js:695:8)\n    at process.emit (events.js:129:20)\n    at handleMessage (child_process.js:327:10)\n    at child_process.js:411:7\n    at process.handleConversion.net.Native.got (child_process.js:97:7)\n    at process.<anonymous> (child_process.js:410:13)\n    at process.emit (events.js:129:20)\n    at handleMessage (child_process.js:327:10)\n    at Pipe.channel.onread (child_process.js:353:11)',
+  message: '未被catch的异常！！',
+  message2: NaN }
+[2016-06-22 15:54:33.079] [INFO] cluster - worker 1 fork   pid:13676
+[2016-06-22 15:54:34.910] [FATAL] cluster - { error: { [Error: bind EADDRINUSE] code: 'EADDRINUSE', errno: 'EADDRINUSE', syscall: 'bind' },
+  stack: 'Error: bind EADDRINUSE\n    at exports._errnoException (util.js:746:11)\n    at cb (net.js:1207:33)\n    at shared (cluster.js:589:5)\n    at Worker.<anonymous> (cluster.js:564:9)\n    at process.<anonymous> (cluster.js:695:8)\n    at process.emit (events.js:129:20)\n    at handleMessage (child_process.js:327:10)\n    at child_process.js:411:7\n    at process.handleConversion.net.Native.got (child_process.js:97:7)\n    at process.<anonymous> (child_process.js:410:13)\n    at process.emit (events.js:129:20)\n    at handleMessage (child_process.js:327:10)\n    at Pipe.channel.onread (child_process.js:353:11)',
+  message: '未被catch的异常！！',
+  message2: NaN }
+[2016-06-22 15:56:04.427] [INFO] cluster - worker 1 fork   pid:15844
+[2016-06-22 15:56:06.238] [FATAL] cluster - { error: { [Error: bind EADDRINUSE] code: 'EADDRINUSE', errno: 'EADDRINUSE', syscall: 'bind' },
+  stack: 'Error: bind EADDRINUSE\n    at exports._errnoException (util.js:746:11)\n    at cb (net.js:1207:33)\n    at shared (cluster.js:589:5)\n    at Worker.<anonymous> (cluster.js:564:9)\n    at process.<anonymous> (cluster.js:695:8)\n    at process.emit (events.js:129:20)\n    at handleMessage (child_process.js:327:10)\n    at child_process.js:411:7\n    at process.handleConversion.net.Native.got (child_process.js:97:7)\n    at process.<anonymous> (child_process.js:410:13)\n    at process.emit (events.js:129:20)\n    at handleMessage (child_process.js:327:10)\n    at Pipe.channel.onread (child_process.js:353:11)',
+  message: '未被catch的异常！！',
+  message2: NaN }
+[2016-06-22 15:57:08.730] [INFO] cluster - worker 1 fork   pid:18296
+[2016-06-22 16:10:24.087] [INFO] cluster - worker 1 fork   pid:8484
+[2016-06-23 10:28:54.940] [INFO] cluster - worker 1 fork   pid:27604
+[2016-06-23 11:02:33.028] [INFO] cluster - worker 1 fork   pid:124
+[2016-06-23 12:39:47.508] [INFO] cluster - worker 1 fork   pid:31088
+[2016-06-23 14:32:34.938] [INFO] cluster - worker 1 fork   pid:10556
+[2016-06-23 14:39:31.870] [INFO] cluster - worker 1 fork   pid:27472
+[2016-06-23 14:54:41.664] [INFO] cluster - worker 1 fork   pid:28468
+[2016-06-23 15:03:00.417] [INFO] cluster - worker 1 fork   pid:29732
+[2016-06-23 15:05:13.490] [INFO] cluster - worker 1 fork   pid:29152
+[2016-06-23 15:46:36.007] [INFO] cluster - worker 1 fork   pid:25708
+[2016-06-23 16:03:53.596] [INFO] cluster - worker 1 fork   pid:24816
+[2016-06-23 16:08:41.786] [INFO] cluster - worker 1 fork   pid:2876
+[2016-06-23 16:09:27.421] [INFO] cluster - worker 1 fork   pid:21832
+[2016-06-23 16:15:33.153] [INFO] cluster - worker 1 fork   pid:3296
+[2016-06-23 16:18:27.589] [INFO] cluster - worker 1 fork   pid:19872
+[2016-06-23 16:20:01.459] [INFO] cluster - worker 1 fork   pid:26568
+[2016-06-23 16:23:11.588] [INFO] cluster - worker 1 fork   pid:11056
+[2016-06-23 16:25:37.075] [INFO] cluster - worker 1 fork   pid:30016
+[2016-06-23 16:42:53.910] [INFO] cluster - worker 1 fork   pid:26208
+[2016-06-23 16:42:57.547] [INFO] cluster - worker 1 fork   pid:31588
+[2016-06-23 17:36:58.152] [INFO] cluster - worker 1 fork   pid:9612
+[2016-06-23 17:37:50.896] [INFO] cluster - worker 1 fork   pid:6764
+[2016-06-23 17:40:36.246] [INFO] cluster - worker 1 fork   pid:20172
+[2016-06-23 17:42:17.064] [INFO] cluster - worker 1 fork   pid:22136
+[2016-06-23 17:46:39.358] [INFO] cluster - worker 1 fork   pid:3404
+[2016-06-23 17:47:58.140] [INFO] cluster - worker 1 fork   pid:16176
+[2016-06-23 17:48:56.049] [INFO] cluster - worker 1 fork   pid:22576
+[2016-06-23 17:49:27.342] [INFO] cluster - worker 1 fork   pid:32736
+[2016-06-23 17:53:18.841] [INFO] cluster - worker 1 fork   pid:19332
+[2016-06-23 18:24:01.589] [INFO] cluster - worker 1 fork   pid:25396
+[2016-06-23 18:49:57.695] [INFO] cluster - worker 1 fork   pid:19376
+[2016-06-23 18:50:20.098] [INFO] cluster - worker 1 fork   pid:24816
+[2016-06-23 18:54:57.564] [INFO] cluster - worker 1 fork   pid:15280
+[2016-06-23 18:55:27.349] [INFO] cluster - worker 1 fork   pid:31872
+[2016-06-23 19:09:20.148] [INFO] cluster - worker 1 fork   pid:16084
+[2016-06-23 19:09:40.632] [FATAL] cluster - { error: [TypeError: Cannot read property 'inServiceNum' of undefined],
+  stack: 'TypeError: Cannot read property \'inServiceNum\' of undefined\n    at Array.async.auto.add (d:\\personnel_management\\trunk\\controllers\\personnelDailyData.js:159:88)\n    at listener (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:605:42)\n    at d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:544:17\n    at _arrayEach (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:85:13)\n    at Immediate.taskComplete (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:543:13)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)',
+  message: '未被catch的异常！！',
+  message2: NaN }
+[2016-06-23 19:10:30.342] [INFO] cluster - worker 1 fork   pid:9632
+[2016-06-23 19:12:15.527] [INFO] cluster - worker 1 fork   pid:13264
+[2016-06-23 19:17:56.793] [INFO] cluster - worker 1 fork   pid:22468
+[2016-06-23 19:18:10.589] [FATAL] cluster - { error: [ReferenceError: dataType is not defined],
+  stack: 'ReferenceError: dataType is not defined\n    at Array.async.auto.add (d:\\personnel_management\\trunk\\controllers\\personnelDailyData.js:206:27)\n    at listener (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:605:42)\n    at d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:544:17\n    at _arrayEach (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:85:13)\n    at Immediate.taskComplete (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:543:13)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)',
+  message: '未被catch的异常！！',
+  message2: NaN }
+[2016-06-23 19:20:00.036] [INFO] cluster - worker 1 fork   pid:24104
+[2016-06-23 19:26:36.566] [INFO] cluster - worker 1 fork   pid:11000
+[2016-06-23 19:52:59.894] [INFO] cluster - worker 1 fork   pid:28232
+[2016-06-23 20:29:42.361] [INFO] cluster - worker 1 fork   pid:28432
+[2016-06-23 20:29:57.066] [INFO] cluster - worker 1 fork   pid:5808
+[2016-06-23 20:54:21.693] [INFO] cluster - worker 1 fork   pid:24920
+[2016-06-23 20:55:50.675] [INFO] cluster - worker 1 fork   pid:21892
+[2016-06-23 20:58:07.946] [INFO] cluster - worker 1 fork   pid:6168
+[2016-06-23 21:02:28.890] [INFO] cluster - worker 1 fork   pid:30664
+[2016-06-23 21:26:19.781] [INFO] cluster - worker 1 fork   pid:24648
+[2016-06-23 21:34:39.106] [INFO] cluster - worker 1 fork   pid:24372
+[2016-06-23 21:35:02.407] [INFO] cluster - worker 1 fork   pid:25160
+[2016-06-23 21:37:38.270] [INFO] cluster - worker 1 fork   pid:30400
+[2016-06-23 22:08:51.831] [INFO] cluster - worker 1 fork   pid:19012
+[2016-06-23 22:10:03.889] [INFO] cluster - worker 1 fork   pid:10984
+[2016-06-23 23:04:16.431] [INFO] cluster - worker 1 fork   pid:18512
+[2016-06-23 23:06:16.730] [INFO] cluster - worker 1 fork   pid:28744
+[2016-06-23 23:08:14.962] [FATAL] cluster - { error: [ReferenceError: surfaceEffect is not defined],
+  stack: 'ReferenceError: surfaceEffect is not defined\n    at Array.async.auto.add (d:\\personnel_management\\trunk\\controllers\\personnelDailyData.js:255:32)\n    at listener (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:605:42)\n    at d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:544:17\n    at _arrayEach (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:85:13)\n    at Immediate.taskComplete (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:543:13)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)',
+  message: '未被catch的异常！！',
+  message2: NaN }
+[2016-06-23 23:10:05.893] [INFO] cluster - worker 1 fork   pid:15092
+[2016-06-24 11:31:25.434] [INFO] cluster - worker 1 fork   pid:25044
+[2016-06-24 11:32:12.109] [FATAL] cluster - { error: [TypeError: Cannot read property 'orderCount' of null],
+  stack: 'TypeError: Cannot read property \'orderCount\' of null\n    at Array.async.auto.add (d:\\personnel_management\\trunk\\controllers\\personnelDailyData.js:186:73)\n    at listener (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:605:42)\n    at d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:544:17\n    at _arrayEach (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:85:13)\n    at Immediate.taskComplete (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:543:13)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)',
+  message: '未被catch的异常！！',
+  message2: NaN }
+[2016-06-24 11:33:59.263] [INFO] cluster - worker 1 fork   pid:21988
+[2016-06-24 11:34:35.957] [FATAL] cluster - { error: [TypeError: Cannot read property 'orderCount' of null],
+  stack: 'TypeError: Cannot read property \'orderCount\' of null\n    at Array.async.auto.add (d:\\personnel_management\\trunk\\controllers\\personnelDailyData.js:190:73)\n    at listener (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:605:42)\n    at d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:544:17\n    at _arrayEach (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:85:13)\n    at Immediate.taskComplete (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:543:13)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)',
+  message: '未被catch的异常！！',
+  message2: NaN }
+[2016-06-24 11:58:12.743] [FATAL] cluster - { error: [TypeError: Cannot read property 'orderCount' of null],
+  stack: 'TypeError: Cannot read property \'orderCount\' of null\n    at Array.async.auto.add (d:\\personnel_management\\trunk\\controllers\\personnelDailyData.js:190:73)\n    at listener (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:605:42)\n    at d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:544:17\n    at _arrayEach (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:85:13)\n    at Immediate.taskComplete (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:543:13)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)',
+  message: '未被catch的异常！！',
+  message2: NaN }
+[2016-06-24 12:30:07.118] [INFO] cluster - worker 1 fork   pid:29140
+[2016-06-24 12:30:39.458] [FATAL] cluster - { error: [TypeError: Cannot read property 'orderCount' of null],
+  stack: 'TypeError: Cannot read property \'orderCount\' of null\n    at Array.async.auto.add (d:\\personnel_management\\trunk\\controllers\\personnelDailyData.js:186:73)\n    at listener (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:605:42)\n    at d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:544:17\n    at _arrayEach (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:85:13)\n    at Immediate.taskComplete (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:543:13)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)',
+  message: '未被catch的异常！！',
+  message2: NaN }
+[2016-06-24 12:33:01.845] [INFO] cluster - worker 1 fork   pid:10844
+[2016-06-24 12:33:35.548] [FATAL] cluster - { error: [TypeError: Cannot read property 'orderCount' of null],
+  stack: 'TypeError: Cannot read property \'orderCount\' of null\n    at Array.async.auto.add (d:\\personnel_management\\trunk\\controllers\\personnelDailyData.js:186:73)\n    at listener (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:605:42)\n    at d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:544:17\n    at _arrayEach (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:85:13)\n    at Immediate.taskComplete (d:\\personnel_management\\trunk\\node_modules\\async\\lib\\async.js:543:13)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)',
+  message: '未被catch的异常！！',
+  message2: NaN }
+[2016-06-24 12:43:54.340] [INFO] cluster - worker 1 fork   pid:18840
+[2016-06-24 12:44:26.460] [INFO] cluster - worker 1 fork   pid:12780
+[2016-06-24 13:38:46.761] [INFO] cluster - worker 1 fork   pid:17332
+[2016-06-24 15:00:37.282] [INFO] cluster - worker 1 fork   pid:10708
+[2016-06-24 15:08:11.210] [INFO] cluster - worker 1 fork   pid:30348
+[2016-06-24 15:13:29.300] [INFO] cluster - worker 1 fork   pid:27092
+[2016-06-24 15:15:17.893] [INFO] cluster - worker 1 fork   pid:9428
+[2016-06-24 16:54:41.840] [INFO] cluster - worker 1 fork   pid:18620
+[2016-06-24 17:19:26.454] [INFO] cluster - worker 1 fork   pid:32280
+[2016-06-24 19:03:08.143] [INFO] cluster - worker 1 fork   pid:20912
+[2016-06-24 19:07:07.318] [INFO] cluster - worker 1 fork   pid:30132
+[2016-06-24 19:09:19.944] [INFO] cluster - worker 1 fork   pid:19792
+[2016-06-24 19:10:21.752] [INFO] cluster - worker 1 fork   pid:27336
+[2016-06-25 18:00:56.485] [INFO] cluster - worker 1 fork   pid:8364
+[2016-06-27 10:09:34.062] [INFO] cluster - worker 1 fork   pid:18736
+[2016-06-27 14:03:50.377] [INFO] cluster - worker 1 fork   pid:2320
+[2016-06-27 14:16:15.929] [INFO] cluster - worker 1 fork   pid:13408
+[2016-06-27 14:25:17.733] [INFO] cluster - worker 1 fork   pid:22536
+[2016-06-27 14:48:43.109] [INFO] cluster - worker 1 fork   pid:25348
+[2016-06-27 15:10:35.454] [INFO] cluster - worker 1 fork   pid:32796
+[2016-06-27 16:21:01.215] [INFO] cluster - worker 1 fork   pid:12748
+[2016-06-27 16:25:09.442] [INFO] cluster - worker 1 fork   pid:32136
+[2016-06-27 16:25:26.953] [INFO] cluster - worker 1 fork   pid:27552

@@ -1,0 +1,49 @@
+<script type="text/javascript" charset="utf-8" src="/javascripts/libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/javascripts/libs/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/javascripts/libs/dataTables/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf-8" src="/javascripts/libs/menu.min.js"></script>
+
+<!--<script type="text/javascript" charset="utf-8" src="/javascripts/libs/jquery/jquery.sobox.min.js"></script>-->
+<!--<script type="text/javascript" charset="utf-8" src="/javascripts/libs/jquery/jquery.zbox.js"></script>-->
+
+<!--<script type="text/javascript" charset="utf-8" src="/javascripts/libs/jquery/jquery.validate.js"></script>-->
+<!--<script type="text/javascript" charset="utf-8" src="/javascripts/libs/async.js"></script>-->
+
+<!-- 操作页面的通用方法 -->
+<script type="text/javascript" charset="utf-8" src="/javascripts/utils/commonUtil.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="/javascripts/utils/general.js"></script>
+
+<script>
+    $(function () {
+        $('#side-menu').metisMenu();
+    });
+
+    if (localStorage.currentFirstIndex) {
+        var index3 = localStorage.currentThirdIndex,         // 三级元素
+                index2 = localStorage.currentSecondIndex,    // 二级元素
+                index1 = localStorage.currentFirstIndex;     // 一级元素
+        var sEle = $("#side-menu");
+        sEle.find(".first-li").eq(index1).addClass('active')
+                .children("a").addClass("click-active")
+                .siblings("ul.nav-second-level").addClass('in')
+                .find(".second-li").eq(index2).addClass('active')
+                .children("a").addClass("click-active")
+                .siblings("ul.nav-third-level").addClass("in")
+                .find(".third-li").eq(index3).addClass('active')
+                .children("a").addClass("click-active");
+    }
+
+    $("li a").on("click", function (e) {
+        var index = $(this).parents(".third-li").prevAll().length,          // 三级元素li
+                index1 = $(this).parents(".second-li").prevAll().length,    // 二级元素li
+                index2 = $(this).parents(".first-li").prevAll().length;     // 一级元素li
+        console.log("三级", index, "二级", index1, "一级", index2)
+        localStorage.currentThirdIndex = index;
+        localStorage.currentSecondIndex = index1;
+        localStorage.currentFirstIndex = index2;
+        window.location.href = $(this).attr("href");
+        e.preventDefault();
+    });
+
+</script>

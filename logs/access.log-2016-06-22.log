@@ -1,0 +1,16 @@
+[2016-06-22 15:57:48.911] [INFO] access - url: /user/check_out    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 15:57:48.934] [INFO] access - url: /user/user/login    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 15:57:48.943] [INFO] access - url: /user/login    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 15:57:49.522] [INFO] access - url: /user/login    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 15:57:50.889] [INFO] access - url: /user/login    method: POST   params: {}   body: {"userName":"12345678910","password":"123456"}    query: {}
+[2016-06-22 15:57:51.336] [INFO] access - url: /index    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 15:57:51.346] [INFO] access - url: /user/login    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 15:57:51.693] [INFO] access - url: /user/login    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 15:57:54.901] [INFO] access - url: /user/login    method: POST   params: {}   body: {"userName":"12345678910","password":"123456"}    query: {}
+[2016-06-22 15:57:54.952] [INFO] access - url: /index    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 15:57:54.959] [INFO] access - url: /user/login    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 15:57:55.172] [INFO] access - url: /user/login    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 16:10:32.283] [INFO] access - url: /user/login    method: POST   params: {}   body: {"userName":"12345678910","password":"123456"}    query: {}
+[2016-06-22 16:10:32.341] [INFO] access - url: /index    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 16:10:32.355] [INFO] access - url: /user/login    method: GET   params: {}   body: {}    query: {}
+[2016-06-22 16:10:32.755] [INFO] access - url: /user/login    method: GET   params: {}   body: {}    query: {}

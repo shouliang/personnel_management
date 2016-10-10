@@ -1,0 +1,44 @@
+#!/usr/bin/env node
+var app = require('../app');
+var cluster = require('cluster');
+var debug = require('debug')('personnel_management');
+var Logger = require('../utils/logger').Logger('cluster');
+var numCPUs = 1;
+
+if (cluster.isMaster) {
+    process.title = 'personnel_management';
+    for (var i = 0; i < numCPUs; i++) {
+        cluster.fork();
+    }
+
+    // 创建进程时记录进程创建
+    cluster.on('fork', function (worker) {
+        Logger.info('worker ' + worker.id + ' fork   pid:' + worker.process.pid);
+    });
+
+    // work退出是记录
+    cluster.on('exit', function (worker, signal, code) {
+        Logger.fatal('worker ' + worker.id + ' exit   pid:' + worker.process.pid + '   signal:' + signal + '   code:' + code);
+        cluster.fork();
+    });
+
+    // work失联时记录
+    cluster.on('disconnect', function (worker) {
+        Logger.fatal('worker ' + worker.id + ' disconnect');
+        cluster.fork();
+    });
+} else if (cluster.isWorker) {
+    process.on('uncaughtException', function (err) {
+        Logger.fatal({
+            error: err,
+            stack: err.stack,
+            message: '未被catch的异常！！',
+            message2:+ err.message
+        })
+    });
+
+    app.set('port', process.env.PORT || 49000);
+    var server = app.listen(app.get('port'), function () {
+        debug('Express server listening on port ' + server.address().port);
+    });
+}

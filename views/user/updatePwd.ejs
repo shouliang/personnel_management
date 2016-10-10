@@ -1,0 +1,79 @@
+<%- include ../base/head.ejs %>
+<%- include ../base/css.ejs %>
+<%- include ../base/container.ejs %>
+<style>
+    form#update-pwd .form-group .form-control {
+        margin-left: 50px;
+        display: inline;
+        width: 320px;
+    }
+
+    form#update-pwd h5 {
+        color: #f00;
+        width: 200px;
+        margin-left: 1em;
+        display: none;
+    }
+</style>
+<div id="err">
+    <div class="alert alert-warning alert-dismissible fade in" role="alert"
+         style="position:absolute;top:40%;left: 40%;height: 40px;width: 300px;
+         margin:0 auto;padding:10px;z-index: 999;font-size: 16px;color: #FF0000;">
+        <% if (success) { %>
+        <strong><%= success %></strong>
+        <% } %>
+        <% if (error) { %>
+        <div id="login_error">
+            <strong>
+                <%= error %>
+            </strong>
+        </div>
+        <% } %>
+    </div>
+</div>
+<form id="update-pwd" method="post" style="margin-top: 10px;padding:10px;">
+    <div class="form-group">
+        <label style="margin-left: 2em;">原密码</label>
+        <input type="password" class="form-control" func="old-pwd" name="oldPwd" required placeholder="请输入原密码">
+        <h5 func="old-pwd-error">请输入原密码</h5>
+    </div>
+    <div class="form-group">
+        <label style="margin-left: 2em;">新密码</label>
+        <input type="password" class="form-control" func="pwd" name="pwd" required
+               placeholder="请输入新密码">
+        <h5 func="pwd-error"></h5>
+    </div>
+    <div class="form-group">
+        <label style="margin-left: 1em;">重复密码</label>
+        <input type="password" class="form-control" func="pwd-repeat" required
+               placeholder="请再次输入新密码">
+        <h5 func="repeat-error">
+            两次密码输入不一致</h5>
+    </div>
+    <button type="submit" class="btn btn-success" style="width: 150px;margin-left:294px">确定修改密码</button>
+</form>
+<%- include ../base/javascript.ejs %>
+<script>
+    $(document).ready(function () {
+        var tag = "";
+        <% if(success || error){ %>
+        tag = "tag";
+        <%
+        } %>
+        if (tag && tag.length > 0) {
+            var closeId = setInterval(closeErrorDiv, 1500);
+
+            function closeErrorDiv() {
+                $("div#err").fadeOut();
+                clearInterval(closeId);
+            }
+        }
+        else {
+            $("div#err").hide();
+        }
+    })
+</script>
+
+<script type="text/javascript" charset="utf-8" src="/javascripts/operations/user/updatePwd.js"></script>
+
+<%- include ../base/footer.ejs %>

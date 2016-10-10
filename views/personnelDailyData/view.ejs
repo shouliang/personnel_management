@@ -1,0 +1,210 @@
+<%- include ../base/head.ejs %>
+<%- include ../base/css.ejs %>
+<link href="/javascripts/libs/bootstrap/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
+<style>
+    th, td {
+        white-space: nowrap;
+    }
+</style>
+<%- include ../base/container.ejs %>
+
+<div class="row" style="margin-bottom: 2em;margin-left: 10px">
+    <form class="form-inline" style="margin-bottom: 10px">
+        <div class="form-group" style="margin-right: 10px">
+            <label class="control-label">发生日期开始:</label>
+            <input type="text" class="form-control" id="beginOccurDay" placeholder="">
+        </div>
+        <div class="form-group" style="margin-right: 10px">
+            <label class="control-label">发生日期结束:</label>
+            <input type="text" class="form-control" id="endOccurDay" placeholder="">
+        </div>
+        <div class="form-group" style="margin-right: 10px">
+            <button type="button" class="btn btn-primary" id="searchBtn">查询</button>
+        </div>
+        <div class="form-group" style="margin-right: 10px">
+            <button type="button" class="btn btn-primary" id="resetBtn">重置</button>
+        </div>
+    </form>
+    <div>
+        <table class="table table-striped table-bordered table-hover dataTable no-footer" id="view-table">
+        </table>
+    </div>
+</div>
+
+<!--新增 or 修改 模态框 -->
+<div class="modal fade" id="modal_form" tabindex="-1" role="dialog"
+     aria-labelledby="modalLabel" aria-hidden="true" data-backdrop="static" style="margin-top: 88px;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                            class="sr-only">Close</span></button>
+                <h4 class="modal-title">
+                    基础信息
+                </h4>
+            </div>
+            <form class="form-horizontal" id="base-add-form" role="form" data-toggle="validator">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input id="id" hidden>
+                        <label class="col-sm-3 control-label">数据类型:</label>
+
+                        <div class="col-sm-8">
+                            <select id="dataType" name="dataType" class="form-control">
+                                <option value="10" selected>普通数据</option>
+                                <option value="20">调整数据</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">发生日期:</label>
+
+                        <div class="col-sm-8">
+                            <input id="occurDay" name="occurDay" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">仓库部工资:</label>
+
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="warehouseSalary" name="warehouseSalary"
+                                   placeholder="请输入仓库部工资">
+
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <label class="col-sm-1 coupon-add-notes">*</label>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">物流部工资:</label>
+
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="distributionSalary" name="distributionSalary"
+                                   placeholder="请输入物流部工资">
+                        </div>
+                        <label class="col-sm-1 coupon-add-notes">*</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">后勤部工资:</label>
+
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="logisticsSalary" name="logisticsSalary"
+                                   placeholder="请输入后勤部工资">
+                        </div>
+                        <label class="col-sm-1 coupon-add-notes">*</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">当日入职人数:</label>
+
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="entryNum" name="entryNum"
+                                   placeholder="请输入当日入职人数">
+                        </div>
+                        <label class="col-sm-1 coupon-add-notes">*</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">当日离职人数:</label>
+
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="dismissionNum" name="dismissionNum"
+                                   placeholder="请输入当日离职人数">
+                        </div>
+                        <label class="col-sm-1 coupon-add-notes">*</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">当日出勤人数:</label>
+
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="attendenceNum" name="attendenceNum"
+                                   placeholder="请输入当日出勤人数">
+                        </div>
+                        <label class="col-sm-1 coupon-add-notes">*</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">仓库出勤人数:</label>
+
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="warehouseAttendenceNum"
+                                   name="warehouseAttendenceNum" placeholder="请输入仓库出勤人数">
+                        </div>
+                        <label class="col-sm-1 coupon-add-notes">*</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">物流出勤人数:</label>
+
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="distributionAttendenceNum"
+                                   name="distributionAttendenceNum" placeholder="请输入物流出勤人数">
+                        </div>
+                        <label class="col-sm-1 coupon-add-notes">*</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">培训课时:</label>
+
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="trainHours" name="trainHours"
+                                   placeholder="请输入培训课时">
+                        </div>
+                        <label class="col-sm-1 coupon-add-notes">*</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">培训成本:</label>
+
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="trainCost" name="trainCost"
+                                   placeholder="请输入培训成本">
+                        </div>
+                        <label class="col-sm-1 coupon-add-notes">*</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">日配送量:</label>
+
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="dailyDistributionNum"
+                                   name="dailyDistributionNum" placeholder="请输入日配送量">
+                        </div>
+                        <label class="col-sm-1 coupon-add-notes">*</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">备注:</label>
+
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="remark" name="remark" placeholder="请输入备注"/>
+                        </div>
+                        <label class="col-sm-1 coupon-add-notes"></label>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        关闭
+                    </button>
+                    <button type="button" class="btn btn-primary" id="submit">
+                        提交
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include ../base/javascript.ejs %>
+<script type="text/javascript" charset="utf-8" src="/javascripts/utils/datatables.js"></script>
+<script type="text/javascript" charset="utf-8" src="/javascripts/libs/moment.min.js"></script>
+<script type="text/javascript" charset="utf-8"
+        src="/javascripts/libs/bootstrap/bootstrap-datetimepicker.min.js"></script>
+
+<!-- jquery表单验证 -->
+<script type="text/javascript" charset="utf-8" src="/javascripts/libs/jquery/jquery.validate.js"></script>
+
+<!-- 表单验证tips -->
+<script type="text/javascript" charset="utf-8" src="/javascripts/libs/jquery/jquery.tips.js"></script>
+
+<!-- 列表数据源 -->
+<script type="text/javascript" charset="utf-8" src="/javascripts/operations/personnelDailyData/list.js"></script>
+<%- include ../base/footer.ejs %>
+
+
+
+
